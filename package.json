@@ -1,0 +1,23 @@
+{
+  "name": "robot-market",
+  "version": "1.0.0",
+  "description": "This is an e-commerce site for you to buy robots. The homepage should display a list of robots for people to browse, where on the right side of the screen should display a cart that contains selected robots with total price.",
+  "main": "index.js",
+  "proxy":"http://localhost:8000",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd frontend && npm run start",
+    "server": "cd server && node index.js",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/morphosisteam/robot-market.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/morphosisteam/robot-market#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.2"
+  }
+}
